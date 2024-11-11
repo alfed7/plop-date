@@ -7,6 +7,10 @@ const helpers = plop => {
         const date = format(Date.now(), "yyyy-MM-dd")
         return date
     })
+    plop.setHelper("timestamp", () => {
+        const date = format(Date.now(), "yyyyMMddhhmmss")
+        return date
+    })
 }
 
 module.exports = helpers

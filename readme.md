@@ -1,11 +1,11 @@
-## 💧 plop-helper-date
+## 💧 plop-date
 
-<a href="https://npmjs.com/package/plop-helper-date">
-    <img alt="npm" src="https://img.shields.io/npm/v/plop-helper-date.svg?style=flat-square">
+<a href="https://npmjs.com/package/plop-date">
+    <img alt="npm" src="https://img.shields.io/npm/v/plop-date.svg?style=flat-square">
 </a>
 
-<a href="https://npmjs.com/package/plop-helper-date">
-    <img alt="npm" src="https://img.shields.io/npm/dt/plop-helper-date?style=flat-square">
+<a href="https://npmjs.com/package/plop-date">
+    <img alt="npm" src="https://img.shields.io/npm/dt/plop-date?style=flat-square">
 </a>
 
 _A [plop][plop] helper to grab the current date._
@@ -15,15 +15,15 @@ _A [plop][plop] helper to grab the current date._
 This package is installable from [npm][npm].
 
 ```bash
-npm install --save-dev plop-helper-date
+npm install --save-dev plop-date
 ```
 
 ### 🥑 Usage
 
-Before you can use the `plop-pack`, you have to load it into the `plop` object.
+Before you can use the `plop-date`, you have to load it into the `plop` object.
 
 ```javascript
-plop.load("plop-helper-date")
+plop.load("plop-date")
 ```
 
 Once loaded, you now have access the following helpers.
@@ -31,12 +31,6 @@ Once loaded, you now have access the following helpers.
 #### `date`
 
 Creates a formatted date.
-
-**input**
-
-```json
-{}
-```
 
 **helper**
 
@@ -48,6 +42,22 @@ Creates a formatted date.
 
 ```javascript
 "2020-07-10"
+```
+
+#### `timestamp`
+
+Creates a raw timestamp.
+
+**helper**
+
+```handlebars
+{{timestamp}}
+```
+
+**output**
+
+```javascript
+"20241111223217"
 ```
 
 ### ❔ Questions
